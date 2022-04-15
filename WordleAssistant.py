@@ -78,39 +78,23 @@ def containsNone(wordlist, exclude):
     list_exclude = [item for item in exclude]
 
     for word in wordlist:
-        counter = 0 
+        #create a counter to keep track
+        counter = 0
+        #loop through the list of letters 
         for letter in list_exclude:
+            #if the letter is in the word, add one to the counter
             if letter in word:
                 counter += 1
         
+        #only if the counter is zero, add the word to the set
         if counter == 0:
             wordlist_set.add(word)
         
+        #reset the counter
         counter = 0
-    return wordlist_set
-    
-    '''
-    excluded_words = []
-
-    #loop through the words in the word list
-    for word in wordlist:
-        for i in range(len(list_exclude)):
-            #check if any elements of the exclude list are in the words
-            if list_exclude[i] in word:
-                #if they are append them to a holding list
-                excluded_words.append(word)
-    
-    final_set = set()
-
-    #loop through the words again
-    for word in wordlist:
-        #if the word is not among the words that had the excluded letters, add it to the final set
-        if word not in excluded_words:
-            final_set.add(word)
     
     #return the set
-    return final_set
-    '''
+    return wordlist_set
 
 def containsAtPositions(wordlist, posInfo):
     """ posInfo is a dictionary that maps letters to positions.
