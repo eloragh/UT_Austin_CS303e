@@ -4,7 +4,7 @@
 # Course Name: CS303E
 # 
 # Date: 04/14/2022
-# Description of Program: 
+# Description of Program: This project is a copy of the popular game Wordle.
 
 #IMPORTS
 import os.path
@@ -199,28 +199,29 @@ def doesFileExist():
         return wordlist
 
 def selectWord(wordlist):
-    random.shuffle(wordlist)
+    #select a random index
     index = random.randint(0, len(wordlist))
-
+    #select the word at that index
     word = wordlist[index]
-
+    #return it
     return word
 
-def wordle(wordlist, answer):
-
+def wordle(wordlist, answer = None):
     #pick a random word from the list
     if answer == None:
         word = selectWord(wordlist)
+        print(word)
     else:
         word = answer
 
+    #initialize a guess holding list and a counter
     word_guesses = []
-    count = 1
+    count = 0
 
     #we're allowing five guesses
     while count < 6:
         #get user input
-        guess = input("Enter your guess (" + str(count) + "): ").strip()
+        guess = input("Enter your guess (" + str(count + 1) + "): ").strip()
         guess = guess.lower()
         #if the guess is more or less than 5 letters, it is automatically not in the wordlist
         #also catches words that are not in the wordlist
@@ -262,6 +263,7 @@ def wordle(wordlist, answer):
 
             #print the congratulations message 
             print("CONGRATULATIONS! You win!")
+            print("")
             return
         else:
             #at the end of each loop, print the guess
@@ -282,13 +284,9 @@ def wordle(wordlist, answer):
 #MAIN
 
 def playWordle(answer = None):
-    #welcomeMessage()
+    welcomeMessage()
     wordlist_raw = doesFileExist()
     wordlist, count = createWordlist(wordlist_raw)
-    if answer == None:
-        wordle(wordlist, answer = None)
-    else:
-        wordle(wordlist, answer)
+    wordle(wordlist, answer)
     
 playWordle()
-
