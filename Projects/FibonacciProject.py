@@ -181,6 +181,7 @@ def main():
     value = (input("Please enter a command (0, 1, 2, 3, 4, 5 or 6): "))
 
     if (value == "6") or (value == "help") or (value == "?"):
+        print("\n")
         helpMessage()
         main()
     elif int(value) == 0:
