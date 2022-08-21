@@ -74,7 +74,8 @@ def organizeInput(value):
         #validate input
         if n < 0:
             return VALUE_ERROR
-        #if input passes validation check, return the first n numbers in the fibbonaci sequence
+        #if input passes validation check,
+        #return the first n numbers in the fibbonaci sequence
         else:
             return firstNFibNumbers(n)
     
@@ -84,7 +85,9 @@ def organizeInput(value):
         #validate input
         if i < 0:
             return VALUE_ERROR
-        #if input passes validation check, return the desired i index of the list of first n numbers in the fibbonaci sequence
+        #if input passes validation check, 
+        #return the desired i index of the list of first n numbers 
+        #in the fibbonaci sequence
         else:
             fib_list = firstNFibNumbers(i+1)
             return fib_list[i]
@@ -181,7 +184,7 @@ def main():
         helpMessage()
         main()
     elif int(value) == 0:
-        print("\n" + GOODBYE)
+        print("\n" + GOODBYE + "\n")
     elif int(value) < 0:
         print(COMMAND_ERROR + "\n")
         main()
