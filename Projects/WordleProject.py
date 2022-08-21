@@ -7,6 +7,7 @@
 # Description of Program: This project is a copy of the popular game Wordle.
 
 #IMPORTS
+
 import os.path
 import random
 
