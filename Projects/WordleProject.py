@@ -179,6 +179,7 @@ def wordle(wordlist, answer = None):
 
 def playWordle(answer = None):
     welcomeMessage()
+
     wordlist_raw = doesFileExist()
     wordlist, count = createWordlist(wordlist_raw)
 
