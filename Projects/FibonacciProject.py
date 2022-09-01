@@ -12,7 +12,7 @@
 
 COMMAND_ERROR = "ERROR: Illegal command. Try again."
 VALUE_ERROR = "ERROR: Illegal value entered."
-GOODBYE = "Thanks for using the Fibonnaci Laboratory!  Goodbye."
+GOODBYE = "Thanks for using the Fibonnaci Laboratory! Goodbye."
 
 #FUNCTIONS
 def welcomeMessage():
