@@ -1,11 +1,11 @@
-# CS303e Elements of Computing
+# CS303e Elements of Computing <img align="right" width="150" height="150" src=Misc/UT_Seal.png>
 
 ## Table of Contents
 
-- Introduction
-- Assignments
-- Projects
-- Acknowledgements
+- [Introduction](#introduction)
+- [Assignments](#assignments)
+- [Projects](#projects)
+- [Acknowledgements](#acknowledgements)
 
 ## Introduction
 This repository holds all of my assignments and projects for CS303e Elements of Computing in the Spring 2022 semester at The University of Texas at Austin. CS303e is an introductory Python course covering basic data structures, loops, conditionals, functions, classes, and recursion.
