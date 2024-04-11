@@ -1,4 +1,4 @@
-# [CS303e Elements of Computing](https://www.cs.utexas.edu/~byoung/cs303e/syllabus303e.html) <img align="right" width="150" height="150" src=Misc/UT_Seal.png>
+# [CS303e Elements of Computing](https://www.cs.utexas.edu/~byoung/cs303e/syllabus303e.html) <img align="right" width="100" height="100" src=Misc/UT_Seal.png>
 
 ## Table of Contents
 
